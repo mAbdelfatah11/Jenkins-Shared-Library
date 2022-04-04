@@ -2,7 +2,7 @@
          
  def call() {
  	    echo "commiting the new changes to remote repo..."
-            withCredentials([usernamePassword(credentialsId: 'gitlab-credentials', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+            withCredentials([usernamePassword(credentialsId: 'Github-Credentails', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
                 // git config here for the first time run
                 // AS ALternative: you can configure the author configs. in the jenkins server itself.
                 sh 'git config --global user.email "jenkins@widebot.net"'
