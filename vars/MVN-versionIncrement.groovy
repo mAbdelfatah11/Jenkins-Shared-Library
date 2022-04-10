@@ -10,3 +10,5 @@ def call() {
             env.IMAGE_NAME = "$version-$BUILD_NUMBER"
 
 }
+
+
