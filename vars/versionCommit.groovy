@@ -11,6 +11,7 @@
                 sh "git remote set-url origin https://${USER}:${PASS}@github.com/mAbdelfatah11/java-maven-app-jenkins.git"
                 sh 'git add .'
                 sh 'git commit -m "ci: New version bump"'
+                sh 'git checkout First-Complete-CI-pipeline'
                 sh 'git push origin HEAD:First-Complete-CI-pipeline'
                 
                 }
