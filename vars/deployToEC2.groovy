@@ -5,7 +5,7 @@ def call() {
                    echo 'deploying docker image to EC2...'
 
                    def shellCmd = "bash ./server-cmds.sh"
-                   def ec2Instance = "ec2-user@34.222.35.152"
+                   def ec2Instance = "ec2-user@34.223.6.188"
 
 
                    sshagent(['ec2-server-key']) {
