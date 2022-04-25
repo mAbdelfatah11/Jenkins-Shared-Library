@@ -4,7 +4,7 @@ def call() {
 
                    echo 'deploying docker image to EC2...'
 
-                   def shellCmd = "bash ./server-cmds.sh"
+                   def shellCmd = "bash ./server-cmds.sh ${IMAGE_NAME}"
                    def ec2Instance = "ec2-user@34.223.6.188"
 
 
